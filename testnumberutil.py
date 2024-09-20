@@ -1,7 +1,11 @@
 """
 >>> from numberutil import aswords
 
- Test1: test for 0
+ Test0: test for a negative number
+>>> aswords(-5)
+'ninety five'
+
+test1: testing for a zero
 >>> aswords(0)
 'zero'
 
@@ -32,6 +36,10 @@ Test7: test for a 101 < number < 999
 Test8: test for 999
 >>> aswords(999)
 'nine hundred and ninety nine'
+
+Test9: test for 1000
+>>> aswords(1000)
+'ten hundred'
 
 """
 
