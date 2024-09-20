@@ -25,6 +25,14 @@
 >>> aswords(100)
 'one hundred'
 
+Test7: test for a 101 < number < 999
+>>> aswords(342)
+'three hundred and forty two'
+
+Test8: test for 999
+>>> aswords(999)
+'nine hundred and ninety nine'
+
 """
 
 if __name__ == "__main__":
