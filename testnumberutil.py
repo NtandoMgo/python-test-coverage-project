@@ -8,6 +8,10 @@
 # Test2: test for single digit number
 >>> aswords(5)
 'five'
+
+# Test3: test for a number below 20 and double digit
+>>> aswords(19)
+'nineteen'
 """
 
 if __name__ == "__main__":
