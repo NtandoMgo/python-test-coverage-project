@@ -16,6 +16,15 @@
  Test4: test for a multiple of 10 below 100
 >>> aswords(70)
 'seventy'
+
+ Test5: test for a 21 < number 99
+>>> aswords(34)
+'thirty four'
+
+ Test6: test for exactly 100
+>>> aswords(100)
+'one hundred'
+
 """
 
 if __name__ == "__main__":
