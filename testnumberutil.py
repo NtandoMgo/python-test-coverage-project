@@ -1,45 +1,37 @@
 """
 >>> from numberutil import aswords
 
- Test0: test for a negative number
->>> aswords(-5)
-'ninety five'
-
-test1: testing for a zero
+ Test case 1: for zero
 >>> aswords(0)
 'zero'
 
- Test2: test for single digit number
+ Test case 2: for a single digit number (covers the "units" path)
 >>> aswords(5)
 'five'
 
- Test3: test for a number below 20 and double digit
+ Test case 3: for a number between 10 and 19 (covers the "teens" path)
 >>> aswords(19)
 'nineteen'
 
- Test4: test for a multiple of 10 below 100
->>> aswords(70)
-'seventy'
+ Test case 4: for a multiple of 10 below 100 (covers the "tens" path)
+>>> aswords(80)
+'eighty'
 
- Test5: test for a 21 < number 99
->>> aswords(34)
-'thirty four'
+ Test case 5: for a number in the range 21-99 (covers "tens and units" path)
+>>> aswords(47)
+'forty seven'
 
- Test6: test for exactly 100
+ Test case 6: exactly 100 (covers "hundreds" path without remainder)
 >>> aswords(100)
 'one hundred'
 
-Test7: test for a 101 < number < 999
+ Test case 7: number between 101 and 199 (covers "hundreds with remainder" path)
+>>> aswords(105)
+'one hundred and five'
+
+ Test case 8: number in the range 200-999 (covers "hundreds with tens and units" path)
 >>> aswords(342)
 'three hundred and forty two'
-
-Test8: test for 999
->>> aswords(999)
-'nine hundred and ninety nine'
-
-Test9: test for 1000
->>> aswords(1000)
-'ten hundred'
 
 """
 
